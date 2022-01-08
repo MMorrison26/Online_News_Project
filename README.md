@@ -18,7 +18,7 @@ David identified an excellent source from the UCI Machine Learning Repository. T
 
 * What components contribute towards a popular online news article?
 * Is there an ideal article length that attracts readers?
-* How often is a positive rating translate to sharing the article?
+* How often does a positive rating translate to sharing the article?
 
 ### Description of communication protcols:
 
