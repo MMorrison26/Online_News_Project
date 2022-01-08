@@ -8,7 +8,7 @@ Bailey Lantrip, David Gae, Maddie Back, Melanie Kelsie, and Michelle Morrison
 
 ### Reason we selected it: 
 
-We had 2 former ideas, one of which had data that was too outdated and the latter had a data source with not enough rows to successfully put through Machine Learning. With how much we
+We had 2 former ideas, one of which had data that was too outdated and the latter had a data source without enough rows to successfully put through Machine Learning. With how much we
 re all innundated with news on various platforms each day, this dataset piqued our interest as something relevant and intriguing. 
 
 ### Description of the data source:
