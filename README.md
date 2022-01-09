@@ -20,21 +20,21 @@ David identified an excellent source from the UCI Machine Learning Repository. T
 * Is there an ideal article length that attracts readers?
 * How often does a positive rating translate to sharing the article?
 * Length of words, are the more simply stated articles more shareable?
-2) Is it when it is published?
-3) Is it the title length?
-4) Is it the words in the content?
-5) Is it the positive or negative words in the article?
-6) Looking at keywords. Are they tagging it accurately?
-7) Do images or videos predict whether it is shared more?
-8) Looking at polarity in the text? Are they polarizing articles meant to be provocative?
-9) Data channel: Are certain data channels more popular for sharing than others?
-10) Do images or videos in the article effect whether it is shared?
+* Is it when it is published?
+* Is it the title length?
+* Is it the words in the content?
+* Is it the positive or negative words in the article?
+* Looking at keywords. Are they tagging it accurately?
+* Do images or videos predict whether it is shared more?
+* Looking at polarity in the text? Are they polarizing articles meant to be provocative?
+* Data channel: Are certain data channels more popular for sharing than others?
+* Do images or videos in the article effect whether it is shared?
 
 ### Description of communication protcols:
 
 We are using our Slack project channel, our GitHub repository, and Zoom as necessary - sometimes with all 5 of us and sometimes grouped by our role for the week.
 
-## Database Integration:
+### Database Integration:
 Looking to load the dataset into PGAdmin.
 
 ## Machine Learning ideas:
@@ -44,30 +44,30 @@ Determining if certain words or phrases tend to be shared more often?
 Do the more polarizing articles get shared more?
 Does positive sentiment or negative sentiment make it more shareable?
 
-### list out the values
+#### list out the values
 list1 = []
 for i,j in enumereate(online_news_df.columns.tolist()): <br>
 	list1.append(i) <br>
 	print
 	
-### Create dataframe1 of heatmap
+#### Create dataframe1 of heatmap
 ax = sns.heatmap(list1, linewidth=0.5) <br>
 plt.show() <br>
 
-### Pick the columns with the values that are within treshold high 
+#### Pick the columns with the values that are within treshold high 
 for i, j in enumerate(online_news_df): <br>
 
 	df1 = online_new_df.iloc[i,i]>1 
-### Pick the columns with the values that are within treshold mid
+#### Pick the columns with the values that are within treshold mid
 	df2 = online_new_df.iloc[i,1]>0.5 
-### Pick the columsn with the values that are within treshold low 
+#### Pick the columsn with the values that are within treshold low 
 	df3 = online_new_df.iloc[i,1]>0.1 
 
-### Then perform normalization of the data 
+#### Then perform normalization of the data 
 
-### linear relationship beteween the testable set vs training set.
+#### linear relationship beteween the testable set vs training set.
 
-## Visualization:
+### Visualization:
 Looking to create visualizations on Tableau. 
 Bar chart with the days of the week that the articles were published. 
 
