@@ -35,7 +35,13 @@ David identified an excellent source from the UCI Machine Learning Repository. T
 We are using our Slack project channel, our GitHub repository, and Zoom as necessary - sometimes with all 5 of us and sometimes grouped by our role for the week.
 
 ### Database Integration:
-Looking to load the dataset into PGAdmin.
+After opening the orginal csv file and taking a look at the general structure, we determined that a good place to begin is by building a Entity Relational Diagram (ERD) as seen below:
+
+<p align='center'>
+	<img src="https://github.com/MMorrison26/Online_News_Project/blob/Database_RKrasner/News_ERD.png" alt="ERD" width= 600>
+</p>
+
+Corresponding tables are built into PgAdming with the .sql file saved for future reference. Likewise, the original data file was parsed down into smaller csv files which correspond to the SQL tables.
 
 ## Machine Learning ideas:
 Regression Model
