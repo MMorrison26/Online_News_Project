@@ -33,7 +33,7 @@ We are using our Slack project channel, our GitHub repository, and Zoom as neces
 ### Database Integration:
 Looking to load the dataset into PGAdmin. See preliminary relational database below that we'll be organizing.
 
-## Machine Learning ideas:
+### Machine Learning ideas:
 We will be using a K Means Clustering Model to see which dependent variables affect the popularity and shareability of an article. Below is a brief outline of some of the steps we will be taking in our Machine Learning Model:
 
 #### List out the Values
