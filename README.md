@@ -4,7 +4,7 @@
 
 ## Group Members:
 
-Bailey Lantrip, David Gae, Maddie Back, Melanie Kelsie, and Michelle Morrison
+Bailey Lantrip, David Gae, Maddie Back, Melanie Kelsie, Michelle Morrison, and Rachel Krasner
 
 ### Reason we selected it: 
 
