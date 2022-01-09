@@ -31,7 +31,11 @@ David identified an excellent source from the UCI Machine Learning Repository: h
 We are using our Slack project channel, our GitHub repository, and Zoom as necessary - sometimes with all 5 of us and sometimes grouped by our role for the week.
 
 ### Database Integration:
-Looking to load the dataset into PGAdmin. See preliminary relational database below that we'll be organizing.
+After opening the orginal csv file and taking a look at the general structure, we determined that a good place to begin is by building an Entity Relational Diagram (ERD) as seen below:
+
+
+
+Corresponding tables are built into PgAdmin with the .sql file saved for future reference. Likewise, the original data file was parsed down into smaller csv files, which correspond to the SQL tables.
 
 ### Machine Learning ideas:
 We will be using a K Means Clustering Model to see which dependent variables affect the popularity and shareability of an article. Below is a brief outline of some of the steps we will be taking in our Machine Learning Model:
