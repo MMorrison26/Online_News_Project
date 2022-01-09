@@ -4,7 +4,12 @@
 
 ## Group Members:
 
-Bailey Lantrip, David Gae, Maddie Back, Melanie Kelsie, Michelle Morrison, and Rachel Krasner
+* Bailey Lantrip (Mockup Database) 
+* David Gae (Machine Learning Model)
+* Maddie Back (Technology)
+* Melanie Kelsie (Machine Learning Model) 
+* Michelle Morrison (Repository) 
+* Rachel Krasner (Mockup Database)
 
 ### Reason we selected it: 
 
@@ -37,7 +42,7 @@ After opening the orginal csv file and taking a look at the general structure, w
 
 Corresponding tables are built into PgAdmin with the .sql file saved for future reference. Likewise, the original data file was parsed down into smaller csv files, which correspond to the SQL tables.
 
-### Machine Learning ideas:
+### Machine Learning Model:
 We will be using a K Means Clustering Model to see which dependent variables affect the popularity and shareability of an article. Below is a brief outline of some of the steps we will be taking in our Machine Learning Model:
 
 #### List out the Values
@@ -68,7 +73,7 @@ We will be creating visualizations on Tableau:
 * Scatter plot mapping amount of negative words and amount of positive words and if it correlates to the share amount
 * Bar chart showing which data channels have the highest amount of shares
 
-### Technologies Used
+### Technologies Used:
 
 #### Data Cleaning and Analysis
 Luckily the dataset we are using has all numeric values in the columns, so it will be an easier clean up process. To do the clean-up we will use pandas in ***Jupyter Lab***.   
@@ -81,8 +86,3 @@ The many columns with different attributes can all be looked at as independent v
 
 #### Dashboard
 To present our findings, we will create visualizations on ***Tableau***. With this tool we can create different scatterplots and bar charts to show our findings to questions including (but not limited to). See Visualizations section above. 
-
-
-
-
-
