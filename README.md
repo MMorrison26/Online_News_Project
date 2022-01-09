@@ -41,7 +41,7 @@ After opening the orginal csv file and taking a look at the general structure, w
 	<img src="https://github.com/MMorrison26/Online_News_Project/blob/Database_RKrasner/News_ERD.png" alt="ERD" width= 800>
 </p>
 
-Corresponding tables are built into PgAdming with the .sql file saved for future reference. Likewise, the original data file was parsed down into smaller csv files which correspond to the SQL tables.
+Corresponding tables are built into PgAdmin with the .sql file saved for future reference. Likewise, the original data file was parsed down into smaller csv files which correspond to the SQL tables.
 
 ## Machine Learning ideas:
 Regression Model
