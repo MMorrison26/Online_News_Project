@@ -12,7 +12,6 @@ We had 2 former ideas, one of which had data that was too outdated and the latte
 
 ### Description of the data source:
 
-David identified an excellent source from the UCI Machine Learning Repository. This is one of their 422 available data sets. It's from 2015 and has about 40,000 rows of data, which will be ideal for training and test sets.
 
 ### Questions we hope to answer:
 
@@ -20,9 +19,8 @@ David identified an excellent source from the UCI Machine Learning Repository. T
 * Is there an ideal article length that attracts readers?
 * How often does a positive rating translate to sharing the article?
 
+
 ### Description of communication protcols:
 
 We are using our Slack project channel, our GitHub repository, and Zoom as necessary - sometimes with all 5 of us and sometimes grouped by our role for the week.
-
-
 
