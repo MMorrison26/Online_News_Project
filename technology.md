@@ -2,7 +2,7 @@
 Please see below for the different tools we deem best fit for this project. 
 
 ### Data Cleaning and Analysis
-Luckily the dataset we are using has all numeric numbers in the columns, so it will be an easier clean up process. To do the clean-up we will use pandas in Jupyter lab.   
+Luckily the dataset we are using has all numeric values in the columns, so it will be an easier clean up process. To do the clean-up we will use pandas in Jupyter lab.   
 
 ### Database Storage
 We have decided to load the dataset into PGAdmin as the tool. Here we have created a relationship database where we will create multiple tables for the separate information from the original dataset. 
