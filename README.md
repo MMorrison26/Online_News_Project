@@ -33,7 +33,7 @@ We are using our Slack project channel, our GitHub repository, and Zoom as neces
 ### Database Integration:
 After opening the orginal csv file and taking a look at the general structure, we determined that a good place to begin is by building an Entity Relational Diagram (ERD) as seen below:
 
-
+<img width="1231" alt="News_ERD" src="https://user-images.githubusercontent.com/87578449/148697873-3c9c78f5-ac67-4dad-a68a-0364703f1f22.png">
 
 Corresponding tables are built into PgAdmin with the .sql file saved for future reference. Likewise, the original data file was parsed down into smaller csv files, which correspond to the SQL tables.
 
