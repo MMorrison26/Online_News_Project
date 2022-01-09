@@ -12,69 +12,56 @@ We had 2 former ideas, one of which had data that was too outdated and the latte
 
 ### Description of the data source:
 
-David identified an excellent source from the UCI Machine Learning Repository. This is one of their 422 available data sets. It's from 2015 and has about 40,000 rows of data, which will be ideal for training and test sets.
+David identified an excellent source from the UCI Machine Learning Repository: https://archive.ics.uci.edu/ml/datasets/Online+News+Popularity. This is one of their 422 available data sets. It's from 2015 and has about 40,000 rows of data, which will be ideal for training and test sets. 58 of the 61 columns can be used as possible predictive topics, 2 are non-predictive, and 1 column is the goal field of # of shares.
 
 ### Questions we hope to answer:
 
 * What components contribute towards a popular online news article?
 * Is there an ideal article length that attracts readers?
 * How often does a positive rating translate to sharing the article?
-* Length of words, are the more simply stated articles more shareable?
-* Is it when it is published?
-* Is it the title length?
-* Is it the words in the content?
-* Is it the positive or negative words in the article?
-* Looking at keywords. Are they tagging it accurately?
+* Are the more simply stated articles more shareable?
+* Is popularity based on when it was published?
+* Are positive or negative words predictive in popularity?
 * Do images or videos predict whether it is shared more?
-* Looking at polarity in the text? Are they polarizing articles meant to be provocative?
-* Data channel: Are certain data channels more popular for sharing than others?
-* Do images or videos in the article effect whether it is shared?
+* Are the polarizing articles meant to be provocative and spark more interest?
+* Are certain data channels more popular for sharing than others?
 
 ### Description of communication protcols:
 
 We are using our Slack project channel, our GitHub repository, and Zoom as necessary - sometimes with all 5 of us and sometimes grouped by our role for the week.
 
 ### Database Integration:
-Looking to load the dataset into PGAdmin.
+Looking to load the dataset into PGAdmin. See preliminary relational database below that we'll be organizing.
 
 ## Machine Learning ideas:
-Regression Model
-Trying to predict which ones will be the most shared and most popular?
-Determining if certain words or phrases tend to be shared more often?
-Do the more polarizing articles get shared more?
-Does positive sentiment or negative sentiment make it more shareable?
+We will be using a K Means Clustering Model to see which dependent variables affect the popularity and shareability of an article. Below is a brief outline of some of the steps we will be taking in our Machine Learning Model:
 
-#### list out the values
+#### List out the Values
 list1 = []
 for i,j in enumereate(online_news_df.columns.tolist()): <br>
 	list1.append(i) <br>
 	print
 	
-#### Create dataframe1 of heatmap
+#### Create Dataframe1 of Heatmap
 ax = sns.heatmap(list1, linewidth=0.5) <br>
 plt.show() <br>
 
-#### Pick the columns with the values that are within treshold high 
+#### Pick the Columns with the Values that are within Threshold High 
 for i, j in enumerate(online_news_df): <br>
 
 	df1 = online_new_df.iloc[i,i]>1 
-#### Pick the columns with the values that are within treshold mid
+#### Pick the columns with the values that are within Threshold Mid
 	df2 = online_new_df.iloc[i,1]>0.5 
-#### Pick the columsn with the values that are within treshold low 
+#### Pick the columsn with the values that are within Threshold Low 
 	df3 = online_new_df.iloc[i,1]>0.1 
 
-#### Then perform normalization of the data 
-
-#### linear relationship beteween the testable set vs training set.
+#### Perform Normalization & Find Linear Relationship between Training and Test Set 
 
 ### Visualization:
-Looking to create visualizations on Tableau. 
-Bar chart with the days of the week that the articles were published. 
-
-Scatter plot comparing number of words in the titles (or content) compared to the amount of shares. 
-
-Scatter plot mapping amount of negative words and amount of positive words and if it correlates to the share amount. 
-
-A bar chart showing which data channels have the highest amount of shares.
+We will be creating visualizations on Tableau:
+* Bar chart with the days of the week that the articles were published
+* Scatter plot comparing number of words in the titles (or content) compared to the amount of shares
+* Scatter plot mapping amount of negative words and amount of positive words and if it correlates to the share amount
+* Bar chart showing which data channels have the highest amount of shares
 
 
