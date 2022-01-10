@@ -45,29 +45,29 @@ Corresponding tables are built into PgAdmin with the .sql file saved for future 
 ### Machine Learning Model:
 We will be using a K Means Clustering Model to see which dependent variables affect the popularity and shareability of an article. Below is a brief outline of some of the steps we will be taking in our Machine Learning Model:
 
-application_df = pd.read_csv("./OnlineNewsPopularity.csv")
-application_df.head()
-#remove url
-del application_df['url']
+application_df = pd.read_csv("./OnlineNewsPopularity.csv") <br>
+application_df.head() <br>
+#remove url <br>
+del application_df['url'] <br>
 
-#creating a list header
-print(list(application_df.columns.values))
+#creating a list header <br>
+print(list(application_df.columns.values)) <br>
 
 
-list1 = []
-#keep these concepts for machine learning.
-for i, j in enumerate(application_df.iloc[:,6]):
-   if j > 0.5:
-      list1.append(j)
-   elif j < 0.5:
-      list1.append(j)
-   elif j < 0.1:
-      list1.append(j)
-print(list1)
+list1 = [] <br>
+#keep these concepts for machine learning. <br>
+for i, j in enumerate(application_df.iloc[:,6]): <br>
+   if j > 0.5: <br>
+      list1.append(j) <br>
+   elif j < 0.5: <br>
+      list1.append(j) <br>
+   elif j < 0.1: <br>
+      list1.append(j) <br>
+print(list1) <br>
 
-#### Create Dataframe1 of Heatmap
-ax = sns.heatmap(list1, linewidth=0.5) 
-plt.show() 
+#### Create Dataframe1 of Heatmap <br>
+ax = sns.heatmap(list1, linewidth=0.5)  <br>
+plt.show() <br>
 
 ### Visualization:
 We will be creating visualizations on Tableau:
