@@ -45,26 +45,29 @@ Corresponding tables are built into PgAdmin with the .sql file saved for future 
 ### Machine Learning Model:
 We will be using a K Means Clustering Model to see which dependent variables affect the popularity and shareability of an article. Below is a brief outline of some of the steps we will be taking in our Machine Learning Model:
 
-#### List out the Values
+application_df = pd.read_csv("./OnlineNewsPopularity.csv")
+application_df.head()
+#remove url
+del application_df['url']
+
+#creating a list header
+print(list(application_df.columns.values))
+
+
 list1 = []
-for i,j in enumereate(online_news_df.columns.tolist()): <br>
-	list1.append(i) <br>
-	print
-	
+#keep these concepts for machine learning.
+for i, j in enumerate(application_df.iloc[:,6]):
+   if j > 0.5:
+      list1.append(j)
+   elif j < 0.5:
+      list1.append(j)
+   elif j < 0.1:
+      list1.append(j)
+print(list1)
+
 #### Create Dataframe1 of Heatmap
-ax = sns.heatmap(list1, linewidth=0.5) <br>
-plt.show() <br>
-
-#### Pick the Columns with the Values that are within Threshold High 
-for i, j in enumerate(online_news_df): <br>
-
-	df1 = online_new_df.iloc[i,i]>1 
-#### Pick the columns with the values that are within Threshold Mid
-	df2 = online_new_df.iloc[i,1]>0.5 
-#### Pick the columsn with the values that are within Threshold Low 
-	df3 = online_new_df.iloc[i,1]>0.1 
-
-#### Perform Normalization & Find Linear Relationship between Training and Test Set 
+ax = sns.heatmap(list1, linewidth=0.5) 
+plt.show() 
 
 ### Visualization:
 We will be creating visualizations on Tableau:
