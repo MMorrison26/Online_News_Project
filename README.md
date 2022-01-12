@@ -7,7 +7,7 @@
 * Bailey Lantrip (Mockup Database) 
 * David Gae (Machine Learning Model)
 * Maddie Back (Technology)
-* Melanie Kelsie (Machine Learning Model) 
+* Melanie Kelsey (Machine Learning Model) 
 * Michelle Morrison (Repository) 
 * Rachel Krasner (Mockup Database)
 
@@ -33,7 +33,7 @@ David identified an excellent source from the UCI Machine Learning Repository: h
 
 ### Description of communication protcols:
 
-We are using our Slack project channel, our GitHub repository, and Zoom as necessary - sometimes with all 5 of us and sometimes grouped by our role for the week.
+We are using our Slack project channel, our GitHub repository, and Zoom as necessary - sometimes with all 6 of us and sometimes grouped by our role for the week.
 
 ### Database Integration:
 After opening the orginal csv file and taking a look at the general structure, we determined that a good place to begin is by building an Entity Relational Diagram (ERD) as seen below:
