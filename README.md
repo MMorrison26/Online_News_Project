@@ -17,7 +17,14 @@ We are using our Slack project channel, our GitHub repository, and Zoom as neces
 
 ### Project Outline
 
-1. Develop data in Pandas Python file:
+1. Introduction to Project
+    * Selected Topic & Why
+    * Description of datasource
+    * Questions to be Answered in our Presentation
+    * Overview of data exploration & analysis 
+2. Database Integration
+    *
+4. Develop data in Pandas Python file:
     * Read csv dataset into Pandas Dataframe
     * Remove any unnecessary columns
     * Bucket "shares" column into bins for measuring "popularity." 
@@ -28,8 +35,12 @@ We are using our Slack project channel, our GitHub repository, and Zoom as neces
     * Display the confusion matrix
     * Calculate the balanced accuracy score
     * Print the imbalanced classification report
-2. Develop visualizations to tell our story
-    i. 
+5. Develop visualizations to tell our story
+    * Graph showing Words in the Title vs. Popularity
+    * Graph showing Day Published vs. Popularity
+    * Graph showing Polarity vs. Popularity
+    * Graph showing Positive/Negative Rate vs. Popularity
+    * Graph showing # Images vs. Popularity
 
 ### Machine Learning Model
 
