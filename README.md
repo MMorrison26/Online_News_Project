@@ -17,16 +17,19 @@ We are using our Slack project channel, our GitHub repository, and Zoom as neces
 
 ### Project Outline
 
-1. Read csv dataset into Pandas Dataframe
-2. Remove any unnecessary columns
-3. Bucket "shares" column into bins for measuring "popularity." 
-4. Split data into Training and Test sets
-5. Define our features
-6. Resample data using SMOTEENN
-7. Train the model
-8. Display the confusion matrix
-9. Calculate the balanced accuracy score
-10. Print the imbalanced classification report
+1. Develop data in Pandas Python file:
+    i. Read csv dataset into Pandas Dataframe
+    ii. Remove any unnecessary columns
+    iii. Bucket "shares" column into bins for measuring "popularity." 
+    iv. Split data into Training and Test sets
+    v. Define our features
+    vi. Resample data using SMOTEENN
+    vii. Train the model
+    viii. Display the confusion matrix
+    ix. Calculate the balanced accuracy score
+    x. Print the imbalanced classification report
+2. Develop visualizations to tell our story
+    i. 
 
 ### Machine Learning Model
 
