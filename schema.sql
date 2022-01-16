@@ -20,33 +20,6 @@ CREATE TABLE Category (
 	data_channel_is_world INT
 );
 
-CREATE TABLE Keywords (
-	url VARCHAR, 
-	num_keywords INT, 
-	kw_min_min INT, 
-	kw_max_min INT, 
-	kw_avg_min INT, 
-	kw_min_max INT, 
-	kw_max_max INT, 
-	kw_avg_max INT, 
-	kw_min_avg INT, 
-	kw_max_avg INT, 
-	kw_avg_avg INT
-);
-
-CREATE TABLE Links (
-	url VARCHAR,
-	num_hrefs INT, 
-	num_self_hrefs INT, 
-	self_reference_min_shares INT, 
-	self_reference_max_shares INT, 
-	self_reference_avg_sharess FLOAT(15)
-);	
-
-CREATE TABLE Media (
-	num_imgs INT, 
-	num_videos INT
-);
 
 CREATE TABLE Words (
 	url VARCHAR,
@@ -92,4 +65,31 @@ CREATE TABLE Polarity (
 	abs_title_sentiment_polarity FLOAT(15)
 );
 
-SELECT * FROM shares;
+CREATE TABLE Keywords (
+    url VARCHAR,
+    num_keywords INT,
+    kw_min_min FLOAT(15),
+    kw_max_min FLOAT(15),
+    kw_avg_min FLOAT(15),
+    kw_min_max FLOAT(15),
+    kw_max_max FLOAT(15),
+    kw_avg_max FLOAT(15),
+    kw_min_avg FLOAT(15),
+    kw_max_avg FLOAT(15),
+    kw_avg_avg FLOAT(15)
+);
+
+CREATE TABLE Links (
+	url VARCHAR,
+	num_hrefs INT, 
+	num_self_hrefs INT, 
+	self_reference_min_shares FLOAT(15), 
+	self_reference_max_shares FLOAT(15), 
+	self_reference_avg_sharess FLOAT(15)
+);	
+
+CREATE TABLE Media (
+	url VARCHAR,
+	num_imgs INT, 
+	num_videos INT
+);
