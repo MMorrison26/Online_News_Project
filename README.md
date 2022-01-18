@@ -2,6 +2,8 @@
 
 ## Selected Topic: Online News Popularity
 
+### [Link to Google Slides](https://docs.google.com/presentation/d/17hTziRvz6Hiwmy3satv0QTVF8MOqUpNktrlUoLgleyA/edit?usp=sharing)
+
 ## Group Members:
 
 * Bailey Lantrip (Mockup Database) 
