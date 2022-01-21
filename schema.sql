@@ -47,18 +47,10 @@ CREATE TABLE Processing (
 
 CREATE TABLE Polarity (
 	url VARCHAR, 
-	global_subjectivity FLOAT(15),
-	global_sentiment_polarity FLOAT(15),
-	global_rate_positive_words FLOAT(15),
-	global_rate_negative_words FLOAT(15),
 	rate_positive_words FLOAT(15),
 	rate_negative_words FLOAT(15),
 	avg_positive_polarity FLOAT(15),
-	min_positive_polarity  FLOAT(15),
-	max_positive_polarity FLOAT(15),
 	avg_negative_polarity FLOAT(15),
-	min_negative_polarity FLOAT(15),
-	max_negative_polarity FLOAT(15),
 	title_subjectivity FLOAT(15),
 	title_sentiment_polarity FLOAT(15),
 	abs_title_subjectivity FLOAT(15),
@@ -93,3 +85,57 @@ CREATE TABLE Media (
 	num_imgs INT, 
 	num_videos INT
 );
+
+SELECT * FROM channels_neg_polarity ;
+
+'JOINS'
+
+SELECT c.data_channel_is_lifestyle, c.data_channel_is_entertainment, c.data_channel_is_bus,
+	c.data_channel_is_socmed, c.data_channel_is_tech, c.data_channel_is_world,
+	p.avg_positive_polarity, c.url
+INTO channels_pos_polarity
+FROM category AS c
+LEFT JOIN polarity AS p
+ON (c.url = p.url);
+
+SELECT c.data_channel_is_lifestyle, c.data_channel_is_entertainment, c.data_channel_is_bus,
+	c.data_channel_is_socmed, c.data_channel_is_tech, c.data_channel_is_world,
+	p.avg_negative_polarity, c.url
+INTO channels_neg_polarity
+FROM category AS c
+LEFT JOIN polarity AS p
+ON (c.url = p.url);
+
+
+SELECT c.data_channel_is_lifestyle, c.data_channel_is_entertainment, c.data_channel_is_bus,
+	c.data_channel_is_socmed, c.data_channel_is_tech, c.data_channel_is_world,
+	c.avg_negative_polarity, c.url, s.shares
+INTO shares_channel_neg_pol
+FROM channels_neg_polarity AS c
+LEFT JOIN shares AS s
+ON (c.url = s.url);
+
+ALTER TABLE shares_channel_neg_pol 
+DROP COLUMN url;
+
+SELECT c.data_channel_is_lifestyle, c.data_channel_is_entertainment, c.data_channel_is_bus,
+	c.data_channel_is_socmed, c.data_channel_is_tech, c.data_channel_is_world,
+	c.avg_positive_polarity, c.url, s.shares
+INTO shares_channel_pos_pol
+FROM channels_pos_polarity AS c
+LEFT JOIN shares AS s
+ON (c.url = s.url);
+
+ALTER TABLE shares_channel_pos_pol
+DROP COLUMN url;
+
+SELECT t.weekday_is_monday, t.weekday_is_tuesday, t.weekday_is_wednesday,
+	t.weekday_is_thursday, t.weekday_is_friday, t.weekday_is_saturday, 
+	t.weekday_is_sunday, t.is_weekend, s.url, s.shares
+INTO shares_by_day
+FROM time AS T
+LEFT JOIN shares AS s
+ON t.url = s.url; 
+
+ALTER TABLE shares_by_day
+DROP COLUMN url;
