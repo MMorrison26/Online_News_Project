@@ -47,6 +47,21 @@ CREATE TABLE Processing (
 
 CREATE TABLE Polarity (
 	url VARCHAR, 
+	timedelta INT, 
+	rate_positive_words FLOAT(15),
+	rate_negative_words FLOAT(15),
+	avg_positive_polarity FLOAT(15),
+	avg_negative_polarity FLOAT(15),
+	title_subjectivity FLOAT(15),
+	title_sentiment_polarity FLOAT(15),
+	abs_title_subjectivity FLOAT(15),
+	abs_title_sentiment_polarity FLOAT(15)
+);
+
+CREATE TABLE Shares_v_polarity (
+	url VARCHAR, 
+	shares INT, 
+	timedelta INT, 
 	rate_positive_words FLOAT(15),
 	rate_negative_words FLOAT(15),
 	avg_positive_polarity FLOAT(15),
@@ -85,6 +100,8 @@ CREATE TABLE Media (
 	num_imgs INT, 
 	num_videos INT
 );
+
+
 
 SELECT * FROM channels_neg_polarity ;
 
