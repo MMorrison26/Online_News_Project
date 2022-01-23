@@ -94,7 +94,7 @@ Luckily the dataset we are using has all numeric values in the columns, so it wi
 We have decided to load the dataset into ***Postgres*** as the tool. Here we have created a relational database where we will create multiple tables for the separate information from the original dataset. From there we created an ***AWS*** connection.
 
 #### Machine Learning
-The many columns with different attributes can all be looked at as independent variables, which is why we want to use a Machine Learning Model that is built specifically for that. While a Regression Model was intriguing to show a prediction on the number of shares, we are currently using a Classifer Model to identify "Popular" vs. "Not Popular." 
+The many columns with different attributes can all be looked at as independent variables, which is why we want to use a Machine Learning Model that is built specifically for that. While a Regression Model was intriguing to show a prediction on the number of shares, we are currently using a ***Random Forest Classifer Model*** to identify "Popular" vs. "Not Popular." 
 
 #### Dashboard
 To present our findings, we will create visualizations on ***Tableau***. With this tool we have started to create different scatterplots and bar charts to show our findings to our questions.
