@@ -1,4 +1,4 @@
-:wqlibrary(xlsx)
+library(xlsx)
 
 setwd("~/group_challenges/project1/Database\ Files/")
 
