@@ -6,12 +6,12 @@
 
 ## Group Members:
 
-* Bailey Lantrip (Mockup Database) 
+* Bailey Lantrip (Database) 
 * David Gae (Machine Learning Model)
-* Maddie Back (Technology)
-* Melanie Kelsey (Machine Learning Model) 
-* Michelle Morrison (Repository) 
-* Rachel Krasner (Mockup Database)
+* Maddie Back (GitHub Repository)
+* Melanie Kelsey (Technology/Machine Learning Model) 
+* Michelle Morrison (Machine Learning Model) 
+* Rachel Krasner (Database)
 
 ### Description of communication protcols:
 
@@ -68,9 +68,9 @@ After opening the orginal csv file and taking a look at the general structure, w
 
 ### Machine Learning Model
 
-A big part of our preprocessing was honing in on the columns we wanted to keep of the original 61 columns. We kept the main ones pertaining to token count, included images, days of publication, positive/negative rating, polarity, and number of shares - which brought the column count down to 25. From here, we bucketed the "shares" column into "Shareable" and "Not Shareable" based on the number of shares that fell into the 75th percentile or higher. 
+A big part of our preprocessing was deciding if we wanted to keep all original 61 columns. Initially we honed in on about 7 attributes but decided that predictability is better the more attributes we have contributing to the model. From here, we bucketed the "shares" column into "Popular" and "Not Popular" based on the number of shares that fell into the 75th percentile or higher. 
 
-We used the generic "Train Test Split" code to split our 40,000 rows of data into the default test size of 25% (10,000 rows) while the remaining 75% (30,000 rows) are used for training. After testing Logistic Regression and Random Forest, we ultimately decided to go with the Balanced Random Forest model for our project. This had the highest balanced accuracy score (of only 60%).
+We used the generic "Train Test Split" code to split our 40,000 rows of data into the default test size of 20% (8,000 rows) while the remaining 80% (32,000 rows) are used for training. After testing Logistic Regression and Random Forest, we ultimately decided to go with the Balanced Random Forest Classifier model for our project. This had the highest balanced accuracy score (73%).
 
 #### Data Limitations
 
@@ -91,10 +91,10 @@ We have a preliminary Tableau site up and running with 6 sheets and various visu
 Luckily the dataset we are using has all numeric values in the columns, so it will be an easier clean up process. To do the clean-up we will use pandas in ***Jupyter Lab***.   
 
 #### Database Storage
-We have decided to load the dataset into ***PGAdmin*** as the tool. Here we have created a relational database where we will create multiple tables for the separate information from the original dataset. 
+We have decided to load the dataset into ***Postgres*** as the tool. Here we have created a relational database where we will create multiple tables for the separate information from the original dataset. From there we created an ***AWS*** connection.
 
 #### Machine Learning
-The many columns with different attributes can all be looked at as independent variables, which is why we want to use a Machine Learning Model that is built specifically for that. While a Regression Model can show us the relationship between the variables, we can also use a Clustering Model to see which attributes are most together. We have decided the ***clustering*** approach may be a good way to help visualize how these attributes group together. 
+The many columns with different attributes can all be looked at as independent variables, which is why we want to use a Machine Learning Model that is built specifically for that. While a Regression Model was intriguing to show a prediction on the number of shares, we are currently using a Classifer Model to identify "Popular" vs. "Not Popular." 
 
 #### Dashboard
-To present our findings, we will create visualizations on ***Tableau***. With this tool we can create different scatterplots and bar charts to show our findings to questions including (but not limited to). See Visualizations section above. 
+To present our findings, we will create visualizations on ***Tableau***. With this tool we have started to create different scatterplots and bar charts to show our findings to our questions.
