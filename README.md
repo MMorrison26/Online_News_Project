@@ -70,7 +70,7 @@ After opening the orginal csv file and taking a look at the general structure, w
 
 A big part of our preprocessing was deciding if we wanted to keep all original 61 columns. Initially we honed in on about 7 attributes but decided that predictability is better the more attributes we have contributing to the model. From here, we bucketed the "shares" column into "Popular" and "Not Popular" based on the number of shares that fell into the 75th percentile or higher. 
 
-We used the generic "Train Test Split" code to split our 40,000 rows of data into the default test size of 20% (8,000 rows) while the remaining 80% (32,000 rows) are used for training. After testing Logistic Regression and Random Forest, we ultimately decided to go with the Balanced Random Forest Classifier model for our project. This had the highest balanced accuracy score (73%).
+We used the generic "Train Test Split" code to split our 40,000 rows of data into the default test size of 25% (10,000 rows) while the remaining 75% (30,000 rows) are used for training. After testing Logistic Regression and Random Forest, we ultimately decided to go with the Balanced Random Forest Classifier model for our project. This had the highest balanced accuracy score (73%).
 
 #### Data Limitations
 
