@@ -84,7 +84,7 @@ We have a preliminary Tableau site up and running with 6 sheets and various visu
 ### Technologies Used:
 
 #### Data Cleaning and Analysis
-Luckily the dataset we are using has all numeric values in the columns, so it will be an easier clean up process. To do the clean-up we will use pandas in ***Jupyter Lab***.   
+Luckily the dataset we are using has all numeric values in the columns, so it will be an easier clean up process. To do the clean-up we will use pandas in ***Jupyter Lab*** and ***Google Colab*** to run the Machine Learning code.   
 
 #### Database Storage
 We have decided to load the dataset into ***Postgres*** as the tool. Here we have created a relational database where we will create multiple tables for the separate information from the original dataset. From there we created an ***AWS*** connection.
