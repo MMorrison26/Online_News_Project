@@ -72,7 +72,7 @@ We used the generic "Train Test Split" code to split our 40,000 rows of data int
 
 We are realizing there might be an element of random chance when it comes to which articles will "go viral" and which will not. You can see from the screen shot below, there is no one predictor that stands out for accurately predicting popularity/shareability. Even when we reran the model with the top 3 and again with the top 7 attributes showing significance, the balanced accuracy score went down.
 
-![image](https://user-images.githubusercontent.com/87578449/149640612-42e188c6-4b98-4b68-a5ad-aafcc0d5639f.png)
+<img width="600" alt="Features Importance Rank" src="https://github.com/MMorrison26/Online_News_Project/blob/main/Machine%20Learning/ML_feature_importance.png">
 
 ### Dashboard
 
