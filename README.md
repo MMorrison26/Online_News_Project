@@ -13,10 +13,6 @@
 * Michelle Morrison (Machine Learning Model) 
 * Rachel Krasner (Database)
 
-### Description of communication protcols:
-
-We are using our Slack project channel, our GitHub repository, and Zoom as necessary - sometimes with all 6 of us and sometimes grouped by our role for the week.
-
 ### Reason we selected it: 
 
 We had 2 former ideas, one of which had data that was too outdated and the latter had a data source without enough rows to successfully put through Machine Learning. With how much we're all inundated with news on various platforms each day, this dataset piqued our interest as something relevant and intriguing. 
