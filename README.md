@@ -6,12 +6,12 @@
 
 ## Group Members:
 
-* Bailey Lantrip (Database) 
-* David Gae (Machine Learning Model)
-* Maddie Back (GitHub Repository)
-* Melanie Kelsey (Technology/Machine Learning Model) 
-* Michelle Morrison (Machine Learning Model) 
-* Rachel Krasner (Database)
+* Bailey Lantrip (GitHub Repository) 
+* David Gae (Technology)
+* Maddie Back (Machine Learning)
+* Melanie Kelsey (Database) 
+* Michelle Morrison (Database) 
+* Rachel Krasner (Machine Learning)
 
 ### Reason we selected it: 
 
@@ -49,11 +49,13 @@ David identified an excellent source from the UCI Machine Learning Repository: [
     * Calculate the balanced accuracy score
     * Print the imbalanced classification report
 5. **Develop visualizations to tell our story**
-    * Graph showing Words in the Title vs. Popularity
-    * Graph showing Day Published vs. Popularity
-    * Graph showing Polarity vs. Popularity
-    * Graph showing Positive/Negative Rate vs. Popularity
-    * Graph showing # Images vs. Popularity
+    * Graph showing Article Shares per Category
+    * Graph showing Number of Articles per Category
+    * Graph showing Percent Popularity by Category
+    * Graph showing Positive/Negative Words vs. Popularity
+    * Graph showing Global Subjectivity vs. Popularity 
+    * Graph showing # Images/Videos vs. Popularity
+    * Graph showing Number of Words per Article vs. Popularity
 
 
 
@@ -64,9 +66,9 @@ After opening the orginal csv file and taking a look at the general structure, w
 
 ### Machine Learning Model
 
-A big part of our preprocessing was deciding if we wanted to keep all original 61 columns. Initially we honed in on about 7 attributes but decided that predictability is better the more attributes we have contributing to the model. From here, we bucketed the "shares" column into "Popular" and "Not Popular" based on the number of shares that fell into the 75th percentile or higher. 
+A big part of our preprocessing was deciding if we wanted to keep all original 61 columns. Initially we honed in on about 7 attributes but decided that predictability is better the more attributes we have contributing to the model. From here, we bucketed the "shares" column into "Popular" and "Not Popular" based on the number of shares per day that fell into the 75th percentile or higher. 
 
-We used the generic "Train Test Split" code to split our 40,000 rows of data into the default test size of 25% (10,000 rows) while the remaining 75% (30,000 rows) are used for training. After testing Logistic Regression and Random Forest, we ultimately decided to go with the Balanced Random Forest Classifier model for our project. This had the highest balanced accuracy score (73%).
+We used the "Train Test Split" code to split our 40,000 rows of data into the default test size of 25% (10,000 rows) while the remaining 75% (30,000 rows) are used for training. The model uses the training dataset to learn, and then it uses the testing dataset to assess its performance. The model takes our X input and our y output and splits each into training/testing sets, so we end up with 4 total sets. After testing Logistic Regression and Random Forest, we ultimately decided to go with the Balanced Random Forest Classifier model for our project. This had the highest balanced accuracy score (78%).
 
 #### Data Limitations
 
@@ -76,8 +78,8 @@ We are realizing there might be an element of random chance when it comes to whi
 
 ### Dashboard
 
-We have a preliminary Tableau site up and running with 6 sheets and various visualizations. We will be narrowing them down in the coming weeks to flesh out final story. See link below.
-### [Link to Tableau](https://public.tableau.com/app/profile/maddie4284/viz/Online_News_Popularity/Online_News?publish=yes)
+Our final Tableau site up and running with 9 sheets and various visualizations. Each sheet looks at 1 of the questions we originally asked, seeing if we can pinpoint a notable predictor. Feel free to use the interactive filters to view specific popularity bins. While there is a lot of interesting information in our dataset, we're not convinced of overall trends based on these illustrations. 
+#### [Link to Tableau](https://public.tableau.com/app/profile/maddie4284/viz/Online_News_Popularity/Online_News?publish=yes)
 
 
 
