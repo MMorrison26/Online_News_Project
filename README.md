@@ -15,7 +15,7 @@
 
 ### Reason we selected it: 
 
-We had 2 former ideas, one of which had data that was too outdated and the latter had a data source without enough rows to successfully put through Machine Learning. With how much we're all inundated with news on various platforms each day, this dataset piqued our interest as something relevant and intriguing. 
+We had 2 former ideas, one of which had data that was too outdated and the latter had a data source without enough rows to successfully put through Machine Learning. With how much we're all inundated with news on various platforms each day, this dataset piqued our interest as something relevant and intriguing, while also offering a large set of data to examine for our project. 
 
 ### Description of the data source:
 
@@ -60,7 +60,7 @@ David identified an excellent source from the UCI Machine Learning Repository: [
 
 
 ### Database Integration:
-After opening the orginal csv file and taking a look at the general structure, we determined that a good place to begin is by building an Entity Relational Diagram (ERD) as seen below. From there we created a Postgres database hosted by Amazong Web Services and connected PgAdmin to the RDS instance. After writing a query to create empty tables, we uploaded the data into an AWS S3 bucket. We started a Spark session to write directly into Postgres and read in the S3 link using PySpark. We performed transformations on the DataFram to match the tables in the AWS RDS database and finally connected to the database and loaded the DataFrames into the tables.
+After opening the original csv file and taking a look at the general structure, we determined that a good place to begin is by building an Entity Relational Diagram (ERD) as seen below. From there we created a Postgres database hosted by Amazon Web Services and connected PgAdmin to the RDS instance. After writing a query to create empty tables, we uploaded the data into an AWS S3 bucket. We started a Spark session to write directly into Postgres and read in the S3 link using PySpark. We performed transformations on the DataFrame to match the tables in the AWS RDS database and finally connected to the database and loaded the DataFrames into the tables.
 
 <img width="1231" alt="News_ERD" src="https://user-images.githubusercontent.com/87578449/148697873-3c9c78f5-ac67-4dad-a68a-0364703f1f22.png">
 
@@ -72,9 +72,11 @@ We used the "Train Test Split" code to split our 40,000 rows of data into the de
 
 #### Data Limitations
 
-We are realizing there might be an element of random chance when it comes to which articles will "go viral" and which will not. You can see from the screen shot below, there is no one predictor that stands out for accurately predicting popularity/shareability. Even when we reran the model with the top 3 and again with the top 7 attributes showing significance, the balanced accuracy score went down.
-
+We are realizing there might be an element of random chance when it comes to which articles will "go viral" and which will not. You can see from the screen shot below, there is no one predictor that stands out for accurately predicting popularity/shareability. Even when we reran the model with the top 3 and again with the top 7 attributes showing significance, the balanced accuracy score went down. 
+ 
 <img width="600" alt="Features Importance Rank" src="https://github.com/MMorrison26/Online_News_Project/blob/main/Machine%20Learning/ML_feature_importance.png">
+
+Additionally, even though we had a good amount of data, if we wanted to look at the highly shared outlier subset, there was not a large enough set of outliers to run a machine learning model solely on those articles. So ultimately, we were left to examine all the articles in the dataset which covered a huge spread.
 
 ### Dashboard
 
@@ -86,10 +88,10 @@ Our final Tableau site up and running with 9 sheets and various visualizations. 
 ### Technologies Used:
 
 #### Data Cleaning and Analysis
-Luckily the dataset we are using has all numeric values in the columns, so it will be an easier clean up process. To do the clean-up we will use pandas in ***Jupyter Lab*** and ***Google Colab*** to run the Machine Learning code.   
+Luckily the dataset we used has all numeric values in the columns, so it was an easier clean up process. To do the clean-up we used pandas in ***Jupyter Lab*** and ***Google Colab*** to run the Machine Learning code.   
 
 #### Database Storage
-We have decided to load the dataset into ***Postgres*** as the tool. Here we have created a relational database where we will create multiple tables for the separate information from the original dataset. From there we created an ***AWS*** connection.
+We decided to load the dataset into ***Postgres*** as the tool. Here we have created a relational database where we will create multiple tables for the separate information from the original dataset. From there we created an ***AWS*** connection.
 
 #### Machine Learning
 The many columns with different attributes can all be looked at as independent variables, which is why we want to use a Machine Learning Model that is built specifically for that. While a Regression Model was intriguing to show a prediction on the number of shares, we are currently using a ***Random Forest Classifer Model*** to identify "Popular" vs. "Not Popular." 
