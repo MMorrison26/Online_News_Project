@@ -62,7 +62,7 @@ David identified an excellent source from the UCI Machine Learning Repository: [
 ### Database Integration:
 After opening the original csv file and taking a look at the general structure, we determined that a good place to begin is by building an Entity Relational Diagram (ERD) as seen below. From there we created a Postgres database hosted by Amazon Web Services and connected PgAdmin to the RDS instance. After writing a query to create empty tables, we uploaded the data into an AWS S3 bucket. We started a Spark session to write directly into Postgres and read in the S3 link using PySpark. We performed transformations on the DataFrame to match the tables in the AWS RDS database and finally connected to the database and loaded the DataFrames into the tables.
 
-![](Database/image Files/ERD.png)
+<img width="1231" alt="News_ERD" src=https://github.com/MMorrison26/Online_News_Project/blob/main/Database/image%20Files/ERD.png>
 
 ### Machine Learning Model
 
