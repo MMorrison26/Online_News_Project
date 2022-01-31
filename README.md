@@ -6,12 +6,12 @@
 
 ## Group Members:
 
-* Bailey Lantrip (Database/Technology) 
-* David Gae (Machine Learning/Technology)
-* Maddie Back (Machine Learning/Visualization)
-* Melanie Kelsey (Machine Learning/Visualization) 
-* Michelle Morrison (GitHub/Machine Learning) 
-* Rachel Krasner (Database/Visualization)
+* Bailey Lantrip (Database/Database/GitHub) 
+* David Gae (Machine Learning/Machine Learning/Technology)
+* Maddie Back (Technology/GitHub/Machine Learning)
+* Melanie Kelsey (Machine Learning/Technology/Database) 
+* Michelle Morrison (GitHub/Machine Learning/Database) 
+* Rachel Krasner (Database/Database/Machine Learning)
 
 ### Reason we selected it: 
 
