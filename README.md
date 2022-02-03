@@ -4,6 +4,8 @@
 
 ### [Link to Google Slides](https://docs.google.com/presentation/d/17hTziRvz6Hiwmy3satv0QTVF8MOqUpNktrlUoLgleyA/edit?usp=sharing)
 
+### [Link to Speaker Notes](https://docs.google.com/document/d/1dMr3w5vUDnTF2nDPOCFyYVvh601HJGGX5PXfk2yleKM/edit?usp=sharing)
+
 ## Group Members:
 
 * Bailey Lantrip (Database/Database/GitHub) 
