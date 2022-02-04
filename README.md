@@ -85,7 +85,9 @@ Additionally, even though we had a good amount of data, if we wanted to look at 
 Our final Tableau site is up and running with 9 sheets and various visualizations. Each sheet looks at 1 of the questions we originally asked, seeing if we can pinpoint a notable predictor. Feel free to use the interactive filters to view specific popularity bins. While there is a lot of interesting information in our dataset, we're not convinced of overall trends based on these illustrations. 
 #### [Link to Tableau](https://public.tableau.com/app/profile/maddie4284/viz/Online_News_Popularity/Online_News?publish=yes)
 
+### Recommendations for Future Analysis
 
+As we were working through this project, we came to a few conclusions for future analysis. Since this dataset comes from 2015, the media landscape has shifted in the last seven years and we would predict that other variables are now at play in predicting shareability. Furthermore, since we are interested in which attributes contribute to creating highly shared articles, we thought it would be interesting to be able to isolate the outliers, in this case the viral articles, to understand which attributes most often contribute to extremely high share rates. We would continue experimenting with machine learning models by tweaking different sized training and testing sets, as well as using other algorithms which may produce better results overall. 
 
 ### Technologies Used:
 
