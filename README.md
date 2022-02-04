@@ -17,7 +17,7 @@
 
 ### Reason we selected it: 
 
-We had 2 former ideas, one of which had data that was too outdated and the latter had a data source without enough rows to successfully put through Machine Learning. With how much we're all inundated with news on various platforms each day, this dataset piqued our interest as something relevant and intriguing, while also offering a large set of data to examine for our project. 
+We had two former ideas, one of which had data that was too outdated and the latter had a data source without enough rows to successfully put through Machine Learning. With how much we're all inundated with news on various platforms each day, this particular dataset piqued our interest as something relevant and intriguing, while also offering a large set of data to examine for our project. 
 
 ### Description of the data source:
 
