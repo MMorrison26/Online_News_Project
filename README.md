@@ -82,7 +82,7 @@ Additionally, even though we had a good amount of data, if we wanted to look at 
 
 ### Dashboard
 
-Our final Tableau site up and running with 9 sheets and various visualizations. Each sheet looks at 1 of the questions we originally asked, seeing if we can pinpoint a notable predictor. Feel free to use the interactive filters to view specific popularity bins. While there is a lot of interesting information in our dataset, we're not convinced of overall trends based on these illustrations. 
+Our final Tableau site is up and running with 9 sheets and various visualizations. Each sheet looks at 1 of the questions we originally asked, seeing if we can pinpoint a notable predictor. Feel free to use the interactive filters to view specific popularity bins. While there is a lot of interesting information in our dataset, we're not convinced of overall trends based on these illustrations. 
 #### [Link to Tableau](https://public.tableau.com/app/profile/maddie4284/viz/Online_News_Popularity/Online_News?publish=yes)
 
 
